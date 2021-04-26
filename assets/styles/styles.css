@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/mountain.svg"), url("../images/star.svg"), url("../images/littlestar.svg"), #1d1b25;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain;
+  background-position: bottom, top, top;
+  min-height: 100vh;
+  font-family: inter, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 550px;
+}
+
+.container section .space-ship-container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 14em;
+}
+
+.container section .space-ship-container .main-space-ship {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 2;
+}
+
+.container section .space-ship-container .main-light-container {
+  position: absolute;
+  top: 90px;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.container section .space-ship-container .zero-code {
+  position: absolute;
+  top: 100px;
+  right: 50%;
+  z-index: 1;
+  transform: translate(50%, 0);
+}
+
+.container section .space-ship-container .zero-code img {
+  height: 250px;
+}
+
+.container section .error-code-display {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.container section .error-code-display .shadow-container {
+  position: absolute;
+  top: 150px;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.container section .home-link-container {
+  text-align: center;
+  padding-top: 70px;
+  list-style: 1.2;
+}
+
+.container section .home-link-container span a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
